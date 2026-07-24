@@ -1,8 +1,13 @@
 aid: c2fo
 name: C2FO
-description: 'C2FO is a company surfaced as a portfolio company of softbank-vision-fund, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'C2FO is a fintech company operating the world''s largest on-demand working
+  capital platform, connecting enterprise buyers with their suppliers to enable early
+  invoice payment. Through dynamic discounting, supply chain finance, and marketplace-based
+  funding, suppliers name the discount rate at which they are willing to be paid early
+  while buyers put idle cash to work or free up liquidity. Backed by SoftBank Vision
+  Fund and Union Square Ventures, C2FO serves a global network of businesses across
+  supply chains. No public developer API or developer portal is currently published;
+  this profile captures the company''s public web, security, and legal surface.'
 url: https://raw.githubusercontent.com/api-evangelist/c2fo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +16,30 @@ x-backed-by:
 - union-square-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://c2fo.com/wp-content/uploads/2023/04/Screenshot-2023-03-23-at-9.44.34-AM.png
 tags:
 - Company
 - Fintech
+- Working Capital
+- Supply Chain Finance
+- Dynamic Discounting
+- Invoice Financing
+- Cash Flow
+- Payments
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/c2fo-domain-security.yml
 - type: Website
   url: https://c2fo.com
+- type: GitHubOrganization
+  url: https://github.com/c2fo
+- type: Blog
+  url: https://c2fo.com/blog/
+- type: Support
+  url: https://c2fo.com/contact-us/
+- type: Login
+  url: https://c2fo.com/login/
+- type: PrivacyPolicy
+  url: https://c2fo.com/privacy-policy/
+- type: TermsOfService
+  url: https://c2fo.com/terms-of-use/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
